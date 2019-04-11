@@ -192,3 +192,18 @@ _The code contribution process is not very formal. You just need to make sure th
 ## License
 
 MIT
+
+## 0.1.1版本新增实时，预报方法
+
+下列两个方法是居于getWeather()的type参数封装
+
+使用：
+`$weather = new Weather($key);`
+
+获取实时天气预报方法
+
+`$response = $weather->getLiveWeather($city, 'json');`
+
+获取天气预报方法
+
+`$response = $weather->getForecastsWeather($city, 'json');`
